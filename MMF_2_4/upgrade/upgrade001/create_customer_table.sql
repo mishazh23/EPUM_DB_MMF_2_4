@@ -1,6 +1,6 @@
 CREATE TABLE "Customer" (
-	"id" INT NOT NULL,
-	"name" VARCHAR2(255) NOT NULL,
+	"id" INT GENERATED ALWAYS AS IDENTITY,
+	"name" VARCHAR2(255),
 	"adress" VARCHAR2(255),
 	constraint CUSTOMER_PK PRIMARY KEY ("id"));
 

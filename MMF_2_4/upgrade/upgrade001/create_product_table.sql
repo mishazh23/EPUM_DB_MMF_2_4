@@ -1,12 +1,12 @@
 CREATE TABLE "Product" (
-	"id" INT NOT NULL,
+	"id" INT GENERATED ALWAYS AS IDENTITY,
 	"name" VARCHAR2(255),
-	"energy" INT,
-	"protein" INT,
-	"fat" INT,
-	"carbs" INT,
-	"weight" INT,
-	"shelf_life" INT,
+	"energy" FLOAT,
+	"protein" FLOAT,
+	"fat" FLOAT,
+	"carbs" FLOAT,
+	"weight" FLOAT,
+	"shelf_life" FLOAT,
 	"cocoa" VARCHAR2(255),
 	constraint PRODUCT_PK PRIMARY KEY ("id"));
 

@@ -1,7 +1,7 @@
 CREATE TABLE "Box" (
-	"id" INT NOT NULL,
+	"id" INT GENERATED ALWAYS AS IDENTITY,
 	"product_id" INT,
-	"amount" INT,
+	"amount" Float,
 	"type_id" INT,
 	constraint BOX_PK PRIMARY KEY ("id"));
 

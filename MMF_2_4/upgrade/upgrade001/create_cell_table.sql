@@ -1,5 +1,5 @@
 CREATE TABLE "Cell" (
-	"id" INT NOT NULL,
+	"id" INT GENERATED ALWAYS AS IDENTITY,
 	"box_id" INT,
 	"storage_id" INT,
 	"status" CHAR(1) CHECK ("status" IN ('N','Y')),

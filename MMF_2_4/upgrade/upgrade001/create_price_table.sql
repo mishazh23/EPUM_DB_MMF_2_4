@@ -1,6 +1,6 @@
 CREATE TABLE "Price" (
-	"id" INT NOT NULL,
-	"box_id" INT,
+	"id" INT GENERATED ALWAYS AS IDENTITY,
+	"product_id" int,
 	"price" FLOAT,
 	constraint PRICE_PK PRIMARY KEY ("id"));
 

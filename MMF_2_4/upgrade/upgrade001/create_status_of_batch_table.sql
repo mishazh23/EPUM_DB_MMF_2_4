@@ -1,6 +1,6 @@
 CREATE TABLE "Status_of_batch" (
-	"id" INT NOT NULL,
-	"state" VARCHAR2(255) NOT NULL,
+	"id" INT GENERATED ALWAYS AS IDENTITY,
+	"state" VARCHAR2(255),
 	constraint STATUS_OF_BATCH_PK PRIMARY KEY ("id"));
 
 

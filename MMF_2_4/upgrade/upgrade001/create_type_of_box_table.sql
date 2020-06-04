@@ -1,5 +1,5 @@
 CREATE TABLE "Type_of_box" (
-	"id" INT NOT NULL,
+	"id" INT GENERATED ALWAYS AS IDENTITY,
 	"type" VARCHAR2(255),
 	constraint TYPE_OF_BOX_PK PRIMARY KEY ("id"));
 

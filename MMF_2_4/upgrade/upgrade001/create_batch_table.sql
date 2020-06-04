@@ -1,10 +1,11 @@
 CREATE TABLE "Batch" (
-	"id" INT NOT NULL,
+	"id" INT GENERATED ALWAYS AS IDENTITY,
 	"customer_id" INT,
 	"status_id" INT,
-	"cell_id" INT,
+	"box_id" INT,
 	"shipment_id" INT,
-	"date_of_producing" DATE,
+    "transport" VARCHAR(255),
+	"count" FLOAT,
 	constraint BATCH_PK PRIMARY KEY ("id"));
 
 comment on column "Batch"."id" is 'unique identifier';

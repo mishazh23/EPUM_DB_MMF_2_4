@@ -1,6 +1,6 @@
 CREATE TABLE "Storage" (
-	"id" INT NOT NULL,
-	"amount_of_cells" INT,
+	"id" INT GENERATED ALWAYS AS IDENTITY,
+	"amount_of_cells" FLOAT,
 	constraint STORAGE_PK PRIMARY KEY ("id"));
 
 COMMENT ON COLUMN "Storage"."id" IS 'Unique identifier';

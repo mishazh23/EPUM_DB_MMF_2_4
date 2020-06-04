@@ -1,7 +1,7 @@
 CREATE TABLE "Shipment" (
-	"id" INT NOT NULL,
+	"id" INT GENERATED ALWAYS AS IDENTITY,
 	"date" DATE,
-	"amount_of_batches" INT,
+	"amount_of_batches" FLOAT,
 	constraint SHIPMENT_PK PRIMARY KEY ("id"));
 
 COMMENT ON COLUMN "Shipment"."id" IS 'Unique identifier';

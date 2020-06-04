@@ -2,82 +2,48 @@ Connected.
 
 Table "Batch" created.
 
-Elapsed: 00:00:00.019
+Elapsed: 00:00:00.034
 
 Comment created.
 
-Elapsed: 00:00:00.004
+Elapsed: 00:00:00.003
 
 Comment created.
 
-Elapsed: 00:00:00.001
+Elapsed: 00:00:00.003
 
 Comment created.
 
-Elapsed: 00:00:00.001
+Elapsed: 00:00:00.003
+
+Error starting at line : 14 File @ D:\Dolce_Vita\upgrade\.\upgrade001\create_batch_table.sql
+In command -
+comment on column "Batch"."cell_id" is 'identifier of cell of this batch'
+Error report -
+ORA-00904: "cell_id": недопустимый идентификатор
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+Elapsed: 00:00:00.015
 
 Comment created.
 
-Elapsed: 00:00:00.002
+Elapsed: 00:00:00.005
 
-Comment created.
-
-Elapsed: 00:00:00.002
-
-Comment created.
-
-Elapsed: 00:00:00.002
-Elapsed: 00:00:00.002
+Error starting at line : 16 File @ D:\Dolce_Vita\upgrade\.\upgrade001\create_batch_table.sql
+In command -
+comment on column "Batch"."date_of_producing" is 'date of producing of batch'
+Error report -
+ORA-00904: "date_of_producing": недопустимый идентификатор
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+Elapsed: 00:00:00.013
+Elapsed: 00:00:00.014
 
 Table "Box" created.
 
-Elapsed: 00:00:00.010
-
-Comment created.
-
-Elapsed: 00:00:00.003
-
-Comment created.
-
-Elapsed: 00:00:00.003
-
-Comment created.
-
-Elapsed: 00:00:00.003
-
-Comment created.
-
-Elapsed: 00:00:00.003
-Elapsed: 00:00:00.003
-
-Table "Cell" created.
-
-Elapsed: 00:00:00.014
-
-Comment created.
-
-Elapsed: 00:00:00.003
-
-Comment created.
-
-Elapsed: 00:00:00.004
-
-Comment created.
-
-Elapsed: 00:00:00.003
-
-Comment created.
-
-Elapsed: 00:00:00.003
-Elapsed: 00:00:00.003
-
-Table "Customer" created.
-
-Elapsed: 00:00:00.016
-
-Comment created.
-
-Elapsed: 00:00:00.004
+Elapsed: 00:00:00.115
 
 Comment created.
 
@@ -85,16 +51,20 @@ Elapsed: 00:00:00.005
 
 Comment created.
 
-Elapsed: 00:00:00.003
-Elapsed: 00:00:00.003
-
-Table "Price" created.
-
-Elapsed: 00:00:00.016
+Elapsed: 00:00:00.005
 
 Comment created.
 
-Elapsed: 00:00:00.003
+Elapsed: 00:00:00.005
+
+Comment created.
+
+Elapsed: 00:00:00.005
+Elapsed: 00:00:00.005
+
+Table "Customer" created.
+
+Elapsed: 00:00:00.032
 
 Comment created.
 
@@ -102,12 +72,39 @@ Elapsed: 00:00:00.006
 
 Comment created.
 
-Elapsed: 00:00:00.003
-Elapsed: 00:00:00.003
+Elapsed: 00:00:00.005
+
+Comment created.
+
+Elapsed: 00:00:00.005
+Elapsed: 00:00:00.005
+
+Table "Price" created.
+
+Elapsed: 00:00:00.048
+
+Comment created.
+
+Elapsed: 00:00:00.004
+
+Error starting at line : 8 File @ D:\Dolce_Vita\upgrade\.\upgrade001\create_price_table.sql
+In command -
+comment on column "Price"."box_id" is 'identifier of box'
+Error report -
+ORA-00904: "box_id": недопустимый идентификатор
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+Elapsed: 00:00:00.024
+
+Comment created.
+
+Elapsed: 00:00:00.007
+Elapsed: 00:00:00.008
 
 Table "Product" created.
 
-Elapsed: 00:00:00.015
+Elapsed: 00:00:00.178
 
 Comment created.
 
@@ -115,11 +112,19 @@ Elapsed: 00:00:00.003
 
 Comment created.
 
-Elapsed: 00:00:00.002
+Elapsed: 00:00:00.004
 
 Comment created.
 
-Elapsed: 00:00:00.002
+Elapsed: 00:00:00.004
+
+Comment created.
+
+Elapsed: 00:00:00.004
+
+Comment created.
+
+Elapsed: 00:00:00.003
 
 Comment created.
 
@@ -127,32 +132,7 @@ Elapsed: 00:00:00.005
 
 Comment created.
 
-Elapsed: 00:00:00.002
-
-Comment created.
-
-Elapsed: 00:00:00.003
-
-Comment created.
-
-Elapsed: 00:00:00.002
-
-Comment created.
-
-Elapsed: 00:00:00.002
-Elapsed: 00:00:00.003
-
-Table "Shipment" created.
-
-Elapsed: 00:00:00.012
-
-Comment created.
-
-Elapsed: 00:00:00.003
-
-Comment created.
-
-Elapsed: 00:00:00.002
+Elapsed: 00:00:00.004
 
 Comment created.
 
@@ -161,7 +141,20 @@ Elapsed: 00:00:00.005
 
 Table "Status_of_batch" created.
 
-Elapsed: 00:00:00.010
+Elapsed: 00:00:00.032
+
+Comment created.
+
+Elapsed: 00:00:00.005
+
+Comment created.
+
+Elapsed: 00:00:00.005
+Elapsed: 00:00:00.006
+
+Table "Type_of_box" created.
+
+Elapsed: 00:00:00.028
 
 Comment created.
 
@@ -169,122 +162,66 @@ Elapsed: 00:00:00.004
 
 Comment created.
 
-Elapsed: 00:00:00.002
-Elapsed: 00:00:00.002
-
-Table "Storage" created.
-
-Elapsed: 00:00:00.010
-
-Comment created.
-
-Elapsed: 00:00:00.002
-
-Comment created.
-
-Elapsed: 00:00:00.003
-Elapsed: 00:00:00.003
-
-Table "Type_of_box" created.
-
-Elapsed: 00:00:00.011
-
-Comment created.
-
-Elapsed: 00:00:00.002
-
-Comment created.
-
-Elapsed: 00:00:00.003
-Elapsed: 00:00:00.003
-
-Table "Box" altered.
-
-Elapsed: 00:00:00.016
-
-Table "Box" altered.
-
+Elapsed: 00:00:00.008
 Elapsed: 00:00:00.009
+
+Table "Box" altered.
+
+Elapsed: 00:00:00.041
+
+Table "Box" altered.
+
+Elapsed: 00:00:00.029
 old:create index "DV_Box_Product_IDX" on "Box"("product_id") tablespace &&INDEX_TABLESPACE
-new:create index "DV_Box_Product_IDX" on "Box"("product_id") tablespace c##darya_IDX
+new:create index "DV_Box_Product_IDX" on "Box"("product_id") tablespace mmf_2_4__IDX
 
 Index "DV_Box_Product_IDX" created.
 
-Elapsed: 00:00:00.008
+Elapsed: 00:00:00.018
 old:create index "DV_Box_Type_IDX" on "Box"("type_id") tablespace &&INDEX_TABLESPACE
-new:create index "DV_Box_Type_IDX" on "Box"("type_id") tablespace c##darya_IDX
+new:create index "DV_Box_Type_IDX" on "Box"("type_id") tablespace mmf_2_4__IDX
 
 Index "DV_Box_Type_IDX" created.
 
-Elapsed: 00:00:00.007
+Elapsed: 00:00:00.015
 
 Table "Price" altered.
 
-Elapsed: 00:00:00.102
-old:create index "DV_Price_Box_IDX" on "Price"("box_id") tablespace &&INDEX_TABLESPACE
-new:create index "DV_Price_Box_IDX" on "Price"("box_id") tablespace c##darya_IDX
+Elapsed: 00:00:00.048
+old:create index "DV_Price_Poduct_IDX" on "Price"("product_id") tablespace &&INDEX_TABLESPACE
+new:create index "DV_Price_Poduct_IDX" on "Price"("product_id") tablespace mmf_2_4__IDX
 
-Index "DV_Price_Box_IDX" created.
-
-Elapsed: 00:00:00.017
-
-Table "Cell" altered.
-
-Elapsed: 00:00:00.015
-
-Table "Cell" altered.
-
-Elapsed: 00:00:00.012
-old:create index "DV_Cell_Box_IDX" on "Cell"("box_id") tablespace &&INDEX_TABLESPACE
-new:create index "DV_Cell_Box_IDX" on "Cell"("box_id") tablespace c##darya_IDX
-
-Index "DV_Cell_Box_IDX" created.
-
-Elapsed: 00:00:00.010
-old:create index "DV_Cell_Storage_IDX" on "Cell"("storage_id") tablespace &&INDEX_TABLESPACE
-new:create index "DV_Cell_Storage_IDX" on "Cell"("storage_id") tablespace c##darya_IDX
-
-Index "DV_Cell_Storage_IDX" created.
-
-Elapsed: 00:00:00.006
-
-Table "Batch" altered.
+Index "DV_Price_Poduct_IDX" created.
 
 Elapsed: 00:00:00.017
 
 Table "Batch" altered.
 
-Elapsed: 00:00:00.011
+Elapsed: 00:00:00.038
 
 Table "Batch" altered.
 
-Elapsed: 00:00:00.011
+Elapsed: 00:00:00.027
 
 Table "Batch" altered.
 
-Elapsed: 00:00:00.013
+Elapsed: 00:00:00.030
 old:create index "DV_Batch_Customer_IDX" on "Batch"("customer_id") tablespace &&INDEX_TABLESPACE
-new:create index "DV_Batch_Customer_IDX" on "Batch"("customer_id") tablespace c##darya_IDX
+new:create index "DV_Batch_Customer_IDX" on "Batch"("customer_id") tablespace mmf_2_4__IDX
 
 Index "DV_Batch_Customer_IDX" created.
 
-Elapsed: 00:00:00.009
+Elapsed: 00:00:00.018
 old:create index "DV_Batch_Status_of_batch_IDX" on "Batch"("status_id") tablespace &&INDEX_TABLESPACE
-new:create index "DV_Batch_Status_of_batch_IDX" on "Batch"("status_id") tablespace c##darya_IDX
+new:create index "DV_Batch_Status_of_batch_IDX" on "Batch"("status_id") tablespace mmf_2_4__IDX
 
 Index "DV_Batch_Status_of_batch_IDX" created.
 
-Elapsed: 00:00:00.005
-old:create index "DV_Batch_Cell_IDX" on "Batch"("cell_id") tablespace &&INDEX_TABLESPACE
-new:create index "DV_Batch_Cell_IDX" on "Batch"("cell_id") tablespace c##darya_IDX
+Elapsed: 00:00:00.013
+old:create index "DV_Batch_Box_IDX" on "Batch"("box_id") tablespace &&INDEX_TABLESPACE
+new:create index "DV_Batch_Box_IDX" on "Batch"("box_id") tablespace mmf_2_4__IDX
 
-Index "DV_Batch_Cell_IDX" created.
+Index "DV_Batch_Box_IDX" created.
 
-Elapsed: 00:00:00.005
-old:create index "DV_Batch_Shipment_IDX" on "Batch"("shipment_id") tablespace &&INDEX_TABLESPACE
-new:create index "DV_Batch_Shipment_IDX" on "Batch"("shipment_id") tablespace c##darya_IDX
-
-Index "DV_Batch_Shipment_IDX" created.
-
-Elapsed: 00:00:00.007
-Elapsed: 00:00:00.007
+Elapsed: 00:00:00.015
+Elapsed: 00:00:00.016
